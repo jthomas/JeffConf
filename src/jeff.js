@@ -24,7 +24,7 @@ function loadPage(){
 	if(window.location.path.length>0){
 		var sitePath=window.location.path;
 		if (typeof siteMap(sitePath) === object) {
-			if (siteMap(sitePath))
+			if (siteMap(sitePath)) {
 				changeArticle(sitePath)
 			} else {
 				changeArticle('home')
