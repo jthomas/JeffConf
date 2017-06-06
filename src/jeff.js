@@ -12,7 +12,7 @@ function changeArticle(elementID) {
 }
 
 function loadPage(){
-/*
+
 	var siteMap = {
 		home: true,
 		agenda: true,
@@ -22,14 +22,14 @@ function loadPage(){
 		coc: true,
 		tickets: true
 	};
-*/
+
 	console.log (window.location.pathname)
 	var sitePath=window.location.pathname.replace("/","");
 
 	if(sitePath.length>0){
 		changeArticle(sitePath);
-/*		
-if (typeof siteMap(sitePath) === object) {
+		
+		if (typeof siteMap(sitePath) === object) {
 			if (siteMap(sitePath)) {
 				changeArticle(sitePath)
 			} else {
@@ -38,7 +38,7 @@ if (typeof siteMap(sitePath) === object) {
 		} else {
 			changeArticle('home')
 		}
-*/
+
 	} else {
 		changeArticle('home')
 	};
