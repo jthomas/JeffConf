@@ -4,6 +4,7 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     history.pushState(null,null,elementID)
+                    console.log(elementID)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -22,6 +23,7 @@ function loadPage(){
 		tickets: true
 	};
 */
+	console.log (window.location.pathname)
 	if(window.location.pathname.length>0){
 		var sitePath=window.location.pathname;
 		changeArticle(sitePath);
