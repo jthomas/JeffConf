@@ -21,8 +21,8 @@ function loadPage(){
 		tickets: true
 	};
 
-	if(window.location.path.length>0){
-		var sitePath=window.location.path;
+	if(window.location.pathname.length>0){
+		var sitePath=window.location.pathname;
 		if (typeof siteMap(sitePath) === object) {
 			if (siteMap(sitePath)) {
 				changeArticle(sitePath)
