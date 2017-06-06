@@ -26,7 +26,7 @@ function loadPage(){
 	console.log (window.location.pathname)
 	var sitePath=window.location.pathname.replace("/","");
 
-	if(sitePath>0){
+	if(sitePath.length>0){
 		changeArticle(sitePath);
 /*		
 if (typeof siteMap(sitePath) === object) {
