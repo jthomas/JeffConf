@@ -24,8 +24,9 @@ function loadPage(){
 	};
 */
 	console.log (window.location.pathname)
-	if(window.location.pathname.length>0){
-		var sitePath=window.location.pathname;
+	var sitePath=window.location.pathname.replace("/","");
+
+	if(sitePath>0){
 		changeArticle(sitePath);
 /*		
 if (typeof siteMap(sitePath) === object) {
