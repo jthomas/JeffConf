@@ -1,4 +1,4 @@
-(function changeArticle(elementID) {
+function changeArticle(elementID) {
             var contentBody = document.getElementById("contentBody").children;
             for (var i = 0; i < contentBody.length; i++) {
                 if (contentBody[i].id == elementID) {
@@ -8,9 +8,9 @@
                 contentBody[i].className ="dn";
                 }
             }   
-})
+}
 
-(function loadPage(){
+function loadPage(){
 /*
 	var siteMap = {
 		home: true,
@@ -39,4 +39,4 @@ if (typeof siteMap(sitePath) === object) {
 	} else {
 		changeArticle('home')
 	};
-})
+}
