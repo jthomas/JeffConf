@@ -12,12 +12,12 @@ function changeArticle(elementID) {
 
 function loadPage(){
 	var siteMap = {
-		home: true;
-		agenda: true;
-		speakers: true;
-		venue: true;
-		partners: false;
-		coc: true;
+		home: true,
+		agenda: true,
+		speakers: true,
+		venue: true,
+		partners: false,
+		coc: true,
 		tickets: true
 	};
 
