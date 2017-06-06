@@ -4,7 +4,7 @@ function changeArticle(elementID) {
                 if (contentBody[i].id == elementID) {
                     contentBody[i].className = "dtc w-100";
                     history.pushState(null,null,elementID)
-                    console.log(elementID)
+//                    console.log(elementID)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -13,17 +13,18 @@ function changeArticle(elementID) {
 
 function loadPage(){
 
+
 	var siteMap = {
-		home: true,
-		agenda: true,
-		speakers: true,
-		venue: true,
-		partners: false,
-		coc: true,
-		tickets: true
+		"home": true,
+		"agenda": true,
+		"speakers": true,
+		"venue": true,
+		"partners": false,
+		"coc": true,
+		"tickets": true
 	};
 
-	console.log (window.location.pathname)
+//	console.log (window.location.pathname)
 	var sitePath=window.location.pathname.replace("/","");
 
 	if(sitePath.length>0){
