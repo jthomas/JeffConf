@@ -2,7 +2,8 @@ function changeArticle(elementID) {
             var contentBody = document.getElementById("contentBody").children;
             for (var i = 0; i < contentBody.length; i++) {
                 if (contentBody[i].id == elementID) {
-                    contentBody[i].className = "dtc w-100"
+                    contentBody[i].className = "dtc w-100";
+                    history.pushState(null,null,elementID)
                 } else {
                 contentBody[i].className ="dn";
                 }
@@ -19,7 +20,7 @@ function loadPage(){
 		coc: true;
 		tickets: true
 	};
-	
+
 	if(window.location.path.length>0){
 		var sitePath=window.location.path;
 		if (typeof siteMap(sitePath) === object) {
