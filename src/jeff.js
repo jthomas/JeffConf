@@ -28,9 +28,9 @@ function loadPage(){
 	var sitePath=window.location.pathname.replace("/","");
 
 	if(sitePath.length>0){
-		changeArticle(sitePath);
+//		changeArticle(sitePath);
 		
-		if (typeof siteMap(sitePath) === object) {
+		if (typeof siteMap(sitePath) === 'object') {
 			if (siteMap(sitePath)) {
 				changeArticle(sitePath)
 			} else {
