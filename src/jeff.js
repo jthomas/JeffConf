@@ -1,4 +1,4 @@
-function changeArticle(elementID) {
+(function changeArticle(elementID) {
             var contentBody = document.getElementById("contentBody").children;
             for (var i = 0; i < contentBody.length; i++) {
                 if (contentBody[i].id == elementID) {
@@ -8,9 +8,10 @@ function changeArticle(elementID) {
                 contentBody[i].className ="dn";
                 }
             }   
-} 
+})
 
-function loadPage(){
+(function loadPage(){
+/*
 	var siteMap = {
 		home: true,
 		agenda: true,
@@ -20,10 +21,12 @@ function loadPage(){
 		coc: true,
 		tickets: true
 	};
-
+*/
 	if(window.location.pathname.length>0){
 		var sitePath=window.location.pathname;
-		if (typeof siteMap(sitePath) === object) {
+		changeArticle(sitePath);
+/*		
+if (typeof siteMap(sitePath) === object) {
 			if (siteMap(sitePath)) {
 				changeArticle(sitePath)
 			} else {
@@ -32,7 +35,8 @@ function loadPage(){
 		} else {
 			changeArticle('home')
 		}
+*/
 	} else {
 		changeArticle('home')
 	};
-}
+})
