@@ -6,6 +6,32 @@ function changeArticle(elementID) {
                 } else {
                 contentBody[i].className ="dn";
                 }
-            }
-    
+            }   
 } 
+
+function loadPage(){
+	var siteMap = {
+		home: true;
+		agenda: true;
+		speakers: true;
+		venue: true;
+		partners: false;
+		coc: true;
+		tickets: true
+	};
+	
+	if(window.location.path.length>0){
+		var sitePath=window.location.path;
+		if (typeof siteMap(sitePath) === object) {
+			if (siteMap(sitePath))
+				changeArticle(sitePath)
+			} else {
+				changeArticle('home')
+			}
+		} else {
+			changeArticle('home')
+		}
+	} else {
+		changeArticle('home')
+	};
+}
