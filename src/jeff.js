@@ -23,7 +23,7 @@ function loadPage(){
 		"coc": true,
 		"tickets": true
 	};
-	console.log (window.location.pathname)
+	
 //	console.log (window.location.pathname)
 	if (window.location.pathname != "") {
 		
@@ -45,5 +45,6 @@ function loadPage(){
 		} else {
 			changeArticle('home')
 		};
+
 	};
 }
